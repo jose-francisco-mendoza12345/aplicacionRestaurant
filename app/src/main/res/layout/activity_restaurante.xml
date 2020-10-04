@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestauranteActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TituloRes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoText="false"
+                android:background="#007BE669"
+                android:text="@string/Titulo_2"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#090909"
+                android:textStyle="bold"
+                app:autoSizeTextType="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/TextoNombre"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="@string/txt_nombre"
+                android:inputType="textPersonName"
+                android:textColorHint="#000000"
+                app:layout_constraintTop_toBottomOf="@+id/TituloRes"
+                tools:layout_editor_absoluteX="14dp" />
+
+            <EditText
+                android:id="@+id/TextoNit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:hint="@string/txt_Nit"
+                android:inputType="textPersonName"
+                android:textColorHint="#000000"
+                app:layout_constraintTop_toBottomOf="@+id/TextoNombre"
+                tools:layout_editor_absoluteX="13dp" />
+
+            <EditText
+                android:id="@+id/TextoPropiet"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/txt_propietario"
+                android:inputType="textPersonName"
+                android:textColorHint="#000000"
+                app:layout_constraintTop_toBottomOf="@+id/TextoNit"
+                tools:layout_editor_absoluteX="13dp" />
+
+            <EditText
+                android:id="@+id/TextoCalle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/txt_calle"
+                android:inputType="textPersonName"
+                android:textColorHint="#000000"
+                app:layout_constraintTop_toBottomOf="@+id/TextoPropiet"
+                tools:layout_editor_absoluteX="14dp" />
+
+            <EditText
+                android:id="@+id/TextoTelf"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/txt_telefono"
+                android:inputType="textPersonName"
+                android:textColorHint="#000000"
+                app:layout_constraintTop_toBottomOf="@+id/TextoCalle"
+                tools:layout_editor_absoluteX="14dp" />
+
+            <EditText
+                android:id="@+id/TextoLog"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/txt_longitud"
+                android:inputType="textPersonName"
+                android:textColorHint="#000000"
+                app:layout_constraintTop_toBottomOf="@+id/TextoTelf"
+                tools:layout_editor_absoluteX="13dp" />
+
+            <EditText
+                android:id="@+id/TextoLat"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/txt_latitud"
+                android:inputType="textPersonName"
+                android:textColorHint="#000000"
+                app:layout_constraintTop_toBottomOf="@+id/TextoTelf"
+                tools:layout_editor_absoluteX="13dp" />
+
+            <EditText
+                android:id="@+id/TextFecha"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/txt_fecha"
+                android:inputType="datetime"
+                android:textColorHint="#000000"
+                app:layout_constraintTop_toBottomOf="@+id/TextoLog"
+                tools:layout_editor_absoluteX="14dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_Logo"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="208dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:background="#03A9F4"
+                app:srcCompat="?attr/selectableItemBackgroundBorderless" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/txt_FotoRes"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/imageLogo"
+                tools:layout_editor_absoluteX="121dp" />
+
+            <ImageView
+                android:id="@+id/imageFoto"
+                android:layout_width="329dp"
+                android:layout_height="222dp"
+                android:layout_gravity="center"
+                android:background="#03A9F4"
+                app:srcCompat="?attr/selectableItemBackgroundBorderless" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:text="TextView" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Button"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="224dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="Guargar"
+                android:text="@string/boton3"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

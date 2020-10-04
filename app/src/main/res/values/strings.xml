@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ProyectoOriginal</string>
+    <string name="Titulo">Restaurante</string>
+    <string name="txt_Login">Login</string>
+    <string name="txt_correo">Correo Electronico</string>
+    <string name="txt_contrasenia">Contraseña</string>
+    <string name="boton1">Iniciar Sesion</string>
+    <string name="boton2">Registrar</string>
+    <string name="rb_normal">Registro Normal</string>
+    <string name="rb_CrearRes">Registrar Restaurante</string>
+
+    <!-- Segunda Actividad -->
+    <string name="Titulo_2">Crear Restaurante</string>
+    <string name="txt_nombre">Nombre:</string>
+    <string name="txt_Nit">Nit:</string>
+    <string name="txt_propietario">Propietario:</string>
+    <string name="txt_calle">Calle:</string>
+    <string name="txt_telefono">Telefono:</string>
+    <string name="txt_longitud">Longitud:</string>
+    <string name="txt_latitud">Latitud:</string>
+    <string name="txt_fecha">Fecha:</string>
+    <string name="txt_Logo">Logo</string>
+    <string name="txt_FotoRes">Foto de Restaurante</string>
+    <string name="boton3">Guardar Datos</string>
+
+    <!-- Tercera Actividad -->
+    <string name="Titulo_3">Crear Menu</string>
+    <string name="txt_nombre2">Nombre</string>
+    <string name="txt_precio">Precio</string>
+    <string name="txt_tomarFoto">Tomar Foto</string>
+    <string name="ListaAgregar">Agregar</string>
+
+</resources>
